@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Animation in CSS</title>
+        <style>
+        body{
+
+        }
+        .block1{
+            width:300px;
+            height:300px;
+            position:absolute;
+            top:30%;
+            left:40%;
+            font-size:40px;
+            color:#ff0000;
+            text-align: center;
+            padding:20px;
+            box-shadow:5px 5px 2px #ff8686,-5px -5px 2px #6b60ff;
+            border:2px dashed #ff4242;
+            animation-name:sample;
+            animation-duration:6s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes sample{
+                from{border-radius:0%;}
+                to{border-radius:50%;}
+        }
+        </style>
+    </head>
+    <body>
+        <div class="block1">
+                Jay Swaminarayan
+        </div>
+    </body>
+</html>
