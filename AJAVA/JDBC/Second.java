@@ -1,12 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author yogesh
+jdbc prapared statments
  */
 import java.sql.*;
 
@@ -18,7 +11,7 @@ public class Second
         String usr="yogesh";
         String passwd="yogesh123";
         String query="select * from first";
-        String insq="insert into first values(123123123123,'Ramesh','Comp',1231233211)";
+        String insq="insert into first values(?,?,?,?)";
         
         Class.forName("com.mysql.jdbc.Driver");//Registering driver......
         Connection con=DriverManager.getConnection(url,usr,passwd);//connection made......
