@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style type="text/css">
+        body{
+            color:#222468;
+            background: #37c1e4;
+            font-size: 18px;
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            border:#123123;
+            border-style: dashed;
+            border-width: 2px;
+        }
+        tr{
+            border-color: black;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Tables</h1>
+        <table border="">
+            <tr>
+                <th>Column1</th>
+                <th>Column2</th>    
+            </tr>
+            <tr>
+                <td>Data of column 1</td>
+                <td>Data of column 2</td>
+            </tr>
+        </table><br><br>
+        <table border="">
+            <tr>
+                <th>Col1</th>
+                <th>Col2</th>
+                <th>Col3</th>
+            </tr>
+            <tr>
+                <td rowspan="2">data1</td >
+                <td colspan="2">data2-3</td>
+            </tr>
+            <tr>
+                <td>this is 2</td>
+                <td>this is 3</td>
+            </tr>
+        </table><br><br>
+
+        <table>
+            <caption>This is a caption</caption>
+            <thead><!--\This is a header\-->
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Body 1</th>
+                    <th>Body 2</th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    
+                </tr>
+            </tfoot>
+
+        </table>
+        
+    </body>
+</html>

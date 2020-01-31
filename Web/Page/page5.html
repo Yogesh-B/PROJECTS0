@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <style>
+            body{
+                color:#123123;
+                background:#adadad ;
+                font-size: 18px;
+            }
+            h1{
+                text-align: center;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h1>Hello, This is a form</h1>
+        <form action="" method="POST">
+             <label >Name:</label><input type="text" name="fname" placeholder="Enter your name"><br>
+            <label >Password:</label><input type="password" name="passwd" placeholder="Enter password"><br>
+            <label >Gender:</label><input type="radio" name="gender" id="male"><label for="male">Male</label><input type="radio" name="gender" id="female"><label for="female">Female</label><br>
+            <label >Hobbies:</label><input type="checkbox" name="hobby" id="music"><label for="music">Listening Music</label><input type="checkbox" name="hobby" id="book"><label for="book">Reading Books</label><input type="checkbox" name="hobby" id="cricket"><label for="cricket">Playing Cricket</label><br>
+            <label>Message:</label><textarea name="message" id="msg1" cols="30" rows="10" placeholder="Leave a comment here..."></textarea><br>
+            <label>Country:</label><select name="coutry" >
+                                        <option value="in">India</option>
+                                        <option value="cn">China</option>
+                                        <option value="us">USA</option>
+                                        <option value="uk">UK</option>
+                                        <option value="pk">Pakistan</option>
+                                        <option value="np">Nepal</option>
+                                    </select><br>
+            <label>Cars</label><select name="cars1" id="">
+                                        <optgroup label="Toyota">
+                                            <option >Innova</option>
+                                            <option >Etios</option>
+                                            <option >Fortuner</option>    
+                                        </optgroup>
+                                        <optgroup label="Renault">
+                                            <option >Kwid</option>
+                                            <option >Duster</option>
+                                            <option >Capture</option>    
+                                        </optgroup>
+                                    </select><br>
+            <label>Cars2</label><input list="cars2">
+                                    <datalist id="cars2">
+                                        <option value="Innova"></option>
+                                        <option value="Kwid"></option>
+                                        <option value="Etios"></option>
+                                        <option value="Swift"></option>
+                                    </datalist><br>
+            <label>Upload File </label><input type="file" accept="audio/*" name="" ><br><br>
+
+            <input type="submit" value="Save">
+            <input type="reset" class="reset"><br>
+            <input type="image" src="./Image/design_ic_visibility.png" >
+            
+                                    
+        </form>
+    </body>
+</html>
