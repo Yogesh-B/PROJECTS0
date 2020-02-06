@@ -2,10 +2,45 @@
 <html>
 	<head><title>Class Work 29 Jan</title></head>
 	<body bgcolor="#CCFFFF">
-		<div  bgcolor="red" width="500px" height="200px">
-		
-		</div>
-		
+		<h1 align="center">Student Registration Form</h1>
+		<form name="st_reg_form" method="POST">
+			<fieldset style="width:300px;">
+				<legend>Login Details</legend>
+				User name:<input type="text" name="txt_name"/>
+				Password:<input type="password" name="txt_passwd"/>
+				Email_id:<input type="text" name="txt_mail"/>
+			</fieldset>
+			
+			<fieldset style="width:300px;">
+				<legend>Qualification</legend>
+				<input type="checkbox" name="check_10"/>10<sup>th</sup><br/>
+				<input type="checkbox" name="check_12"/>12<sup>th</sup><br/>
+				<input type="checkbox" name="check_diplo"/>Diploma<br/>
+				<input type="checkbox" name="check_degree"/>Degree<br/>
+				<input type="checkbox" name="check_master"/>Master-Degree<br/>
+			</fieldset>
+			
+			<fieldset style="width:300px;">
+				<legend>Gender</legend>
+				<input type="radio" name="radio_gen" value="radio_m"/>Male<br/>
+				<input type="radio" name="radio_gen"/>Female<br/>
+			</fieldset>
+
+			<fieldset style="width:300px;">
+				<legend>Profession</legend>
+				<select name="select_prof">
+					<option>selects</option>
+				</select>
+			</fieldset>
+			
+			<fieldset style="width:300px;">
+				<legend>Lines About You</legend>
+				<textarea name="txt_area_you" placeholder="hello, you are welcome"></textarea>
+			</fieldset><br/><br/>
+
+			<button type="submit" name="submit">Submit</button>
+			<button type="reset" name="reset">Reset</button>
+		</form>
 		
 	</body>
 </html>
