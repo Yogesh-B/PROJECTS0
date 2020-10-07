@@ -1,0 +1,38 @@
+--Final Test
+
+#Create an instance.
+-name the instance nucleus-jumphost
+-use the machine type of f1-micro
+-use the default image type (Debian Linux)
+
+#Create a 3 node Kubernetes cluster and run a simple service.
+-Create a cluster (in the us-east1-b zone) to host the service
+-Use the Docker container hello-app (`gcr.io/google-samples/hello-app:2.0`) as a place holder, the team will replace the container with their own work later
+-Expose the app on port 8080
+
+
+#Create an HTTP(s) Load Balancer in front of two web servers.
+
+"
+cat << EOF > startup.sh
+#! /bin/bash
+apt-get update
+apt-get install -y nginx
+service nginx start
+sed -i -- 's/nginx/Google Cloud Platform - '"\$HOSTNAME"'/' /var/www/html/index.nginx-debian.html
+EOF
+"script for instance template
+
+
+
+-Create an instance template
+-Create a target pool
+-Create a managed instance group
+-Create a firewall rule to allow traffic (80/tcp)
+-Create a health check
+-Create a backend service and attach the manged instance group
+-Create a URL map and target HTTP proxy to route requests to your URL map
+-Create a forwarding rule
+
+#completed on 05/10/2020(D-M-Y)
+
